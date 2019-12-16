@@ -284,6 +284,38 @@ https://tympanus.net/codrops/author/crnacura/
 
 }
 
+.downArrow{
+  position: absolute;
+  left: 48%;
+  bottom: 8%;
+  z-index: 3;
+  animation: bounce 1s ease infinite alternate;
+
+}
+
+.downArrow span{
+
+  display: block;
+  width: 35px;
+  height: 35px;
+  border-bottom: 3px solid #000000;
+  border-right: 3px solid #000000;
+  transform: rotate(45deg);
+
+}
+
+@keyframes bounce{
+  from{
+    transform: translateY(0px);
+
+  }
+  to{
+    transform: translateY(40px);
+
+  }
+
+}
+
 /**************************************************************************
 Who Am I Section
 **************************************************************************/
@@ -784,6 +816,13 @@ End (Footer)
 
 }
 
+.frm{
+
+  display: flex;
+  flex-direction: column;
+
+}
+
 .locem{
 
   display: flex;
@@ -952,6 +991,12 @@ End (Footer)
 
   text-align: justify;
   text-align: left;
+
+}
+
+.fix3{
+
+  padding-bottom: 20px;
 
 }
 

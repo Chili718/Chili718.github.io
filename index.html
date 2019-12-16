@@ -40,7 +40,7 @@
       <div class="navbar">
           <a class="miglink" href="#home"><img class="navbar-image" src="images/logo.png"></a>
           <ul class="nav-links" id="check">
-            <li><a href="#about">About</a></li>
+            <li><a href="#bout">About</a></li>
             <li><a href="#clients">Clientele </a></li>
             <li><a href="#stages">Stages</a></li>
             <li><a href="process.html">Process</a></li>
@@ -62,6 +62,11 @@
           <div></div>
           <p>Specializing in Retirement Planning for North Carolina Teachers and State Employees</p>
 
+        </div>
+        <div id="bout" class="downArrow">
+            <a href="#bout">
+            <span></span>
+          </a>
         </div>
 
       </div>
@@ -139,10 +144,10 @@
         </div>
         <div class="innerStage">
           <div class="stage">
-            <a href="stages.html"><img src="images/near.jpg"><h2>Nearing Retirement</h2><h3>26 - 30 Years</h3></a>
+            <a href="stages.html#nr"><img src="images/near.jpg"><h2>Nearing Retirement</h2><h3>26 - 30 Years</h3></a>
           </div>
           <div class="stage adj">
-            <a href="stages.html"><img src="images/retirement.jpg"><h2>Retired</h2></a>
+            <a href="stages.html#r"><img src="images/retirement.jpg"><h2>Retired</h2></a>
           </div>
         </div>
         </div>
@@ -220,7 +225,18 @@
           <div class="suam">
             <h2>Send Us a Message</h2>
 
-            <a href="contact.php"> Test </a>
+            <form class="frm" method="post" action="contact.php">
+                <label>Name:</label>
+                <input name="sender">
+
+                <label>Email address:</label>
+                <input name="senderEmail">
+
+                <label>Message:</label>
+                <textarea rows="5" cols="20" name="message"></textarea>
+
+                <input type="submit" name="submit">
+            </form>
           </div>
         </div>
 
@@ -236,6 +252,8 @@
         </div>
 
       </div>
+
+
 
       <div class="cpyr">
           <p>&copy; Copyright Plan Your North Carolina State Retirement – All rights reserved.<p>
