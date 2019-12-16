@@ -225,18 +225,19 @@
           <div class="suam">
             <h2>Send Us a Message</h2>
 
-            <form class="frm" method="post" action="contact.php">
-                <label>Name:</label>
-                <input name="sender">
-
-                <label>Email address:</label>
-                <input name="senderEmail">
-
-                <label>Message:</label>
-                <textarea rows="5" cols="20" name="message"></textarea>
-
-                <input type="submit" name="submit">
+            <form class="frm" id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/Bob.furlong@LPL.com" method="post">
+              <fieldset id="fs-frm-inputs" class="frm">
+                <label for="full-name">Full Name</label>
+                <input type="text" name="name" id="full-name" placeholder="First and Last" required="">
+                <label for="email-address">Email Address</label>
+                <input type="email" name="_replyto" id="email-address" placeholder="email@domain.tld" required="">
+                <label for="message">Message</label>
+                <textarea rows="5" name="message" id="message" placeholder="" required=""></textarea>
+                <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
+              </fieldset>
+              <input type="submit" value="Submit">
             </form>
+
           </div>
         </div>
 
@@ -257,7 +258,7 @@
 
       <div class="cpyr">
           <p>&copy; Copyright Plan Your North Carolina State Retirement – All rights reserved.<p>
-          <p>Securities and Advisory services offered through LPL Financial, a registered investment advisor, Member FINRA/SIPC.</p>
+          <p>Securities and Advisory services offered through LPL Financial, a registered investment advisor, Member <a href="https://www.finra.org/#/">FINRA</a>/<a href="https://www.sipc.org/">SIPC</a>.</p>
           <p>The LPL Financial Registered Representatives associated with this site may only discuss and/or transact securities business with residents of the following states: NC, SC, and VA</p>
       </div>
 
